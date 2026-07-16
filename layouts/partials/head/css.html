@@ -1,5 +1,7 @@
-{{/* Use the theme's prebuilt Tailwind CSS artifact instead of the live
-     TailwindCSS pipeline, which requires the tailwindcss CLI in PATH. */}}
+{{/* Use a precompiled Tailwind CSS artifact instead of the live pipeline:
+     Hugo 0.164 runs tailwindcss via node only, and this repo stays Node-free.
+     Regenerate after theme/template changes with:
+     tailwindcss -i themes/void/assets/css/main.css -o assets/css/style.css */}}
 {{ with resources.Get "css/style.css" }}
   {{ if hugo.IsProduction }}
     {{ with . | minify | fingerprint }}

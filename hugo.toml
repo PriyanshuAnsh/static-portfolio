@@ -39,3 +39,7 @@ weight = 40
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+[build]
+  [build.buildStats]
+    enable = true
