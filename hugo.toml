@@ -1,18 +1,41 @@
 baseURL = 'http://localhost:1313/'
 locale = 'en-US'
-defaultContentLanguage = 'en'
 title = 'Priyanshu Dongre'
-theme = 'reimu'
+theme = 'void'
 
-[markup.goldmark.renderer]
-unsafe = true
+[params]
+  [params.social]
+    github = "https://github.com/PriyanshuAnsh"
+    email = "priyanshudongre@gmail.com"
+    linkedin = "https://linkedin.com/in/priyanshudongre"
+  [params.avatar]
+    url = "/images/avatar.png"
 
-[markup.goldmark.extensions.passthrough]
-enable = true
-delimiters.block = [["\\[", "\\]"], ["$$", "$$"]]
-delimiters.inline = [["\\(", "\\)"], ["$", "$"]]
+[[menus.main]]
+name = 'Home'
+pageRef = '/'
+weight = 10
 
-[markup.tableOfContents]
-startLevel = 1
-endLevel = 6
-ordered = false
+[[menus.main]]
+name = 'Posts'
+pageRef = '/posts'
+weight = 20
+
+[[menus.main]]
+name = 'Tags'
+pageRef = '/tags'
+weight = 30
+
+[[menus.main]]
+name = 'About'
+pageRef = '/about'
+weight = 40
+
+[markup]
+  [markup.tableOfContents]
+    startLevel = 1
+    endLevel = 6
+    ordered = false
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

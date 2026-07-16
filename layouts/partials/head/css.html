@@ -1,0 +1,15 @@
+{{/* Use the theme's prebuilt Tailwind CSS artifact instead of the live
+     TailwindCSS pipeline, which requires the tailwindcss CLI in PATH. */}}
+{{ with resources.Get "css/style.css" }}
+  {{ if hugo.IsProduction }}
+    {{ with . | minify | fingerprint }}
+      <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+    {{ end }}
+  {{ else }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}?v={{ now.Unix }}">
+  {{ end }}
+{{ end }}
+
+<!-- Responsive Font Support -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
