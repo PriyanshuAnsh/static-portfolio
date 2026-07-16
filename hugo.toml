@@ -9,7 +9,7 @@ theme = 'void'
     email = "priyanshudongre@gmail.com"
     linkedin = "https://linkedin.com/in/priyanshudongre"
   [params.avatar]
-    url = "/images/avatar.png"
+    url = "/images/avatar.webp"
 
 [[menus.main]]
 name = 'Home'
