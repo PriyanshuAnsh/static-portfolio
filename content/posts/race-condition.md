@@ -18,9 +18,10 @@ fmt.printf("Data: %d", data)
 
 The code is written in GoLang; (I'm learning GOLANG!!). Its a pretty easy Go Code,  the important piece of code is the keyword `go`. It creates a `goroutine` that execute the function concurrently; that set's data to 20. 
 What you think we get as an output? 
-	> A. Data: 20
+
+> A. Data: 20
 	
-	> B. Data 10
+> B. Data 10
 
 The Answer: We don't know. This is a race condition code. The code is fighting to change the value to 20 or keep the value to 10. 
 The `go` keyword run the function that sets data concurrently. Henceforth, data = 20 is running parallel to the actual code. 
