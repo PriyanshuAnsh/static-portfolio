@@ -1,8 +1,8 @@
---
+---
 title: "What are Race Conditions?"
 date: 07-16-2026
 tags: ["Synchronization"]
---
+---
 
 When learning about Synchronization, `Race Condition` is a term that we engineers comes across a lot. So, what are race conditions? 
 
