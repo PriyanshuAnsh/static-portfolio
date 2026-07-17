@@ -1,6 +1,6 @@
 ---
 title: "What are Race Conditions?"
-date: 07-16-2026
+date: 2026-07-16
 tags: ["Synchronization"]
 ---
 
