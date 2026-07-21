@@ -1,3 +1,9 @@
+---
+title: "What are Channels in Go"
+date: 2026-07-21
+tags: ["synchronization"]
+---
+
 # What are Channels in Go?
 Channel are Concurrency Primitives in Go. The concept of `channel` was inspired from research paper `Communicating Sequential Processes` by Tony Hoare in 1985.  
 The philosophy of `channel` is as follows:
