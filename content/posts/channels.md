@@ -1,5 +1,5 @@
 ---
-title: "What are Channels in Go"
+title: "What are Channels in Go?"
 date: 2026-07-21
 tags: ["Synchronization"]
 ---
