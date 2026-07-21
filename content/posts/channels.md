@@ -56,7 +56,7 @@ Concurrent programming can be divided into two parts.
 			val := <-channel // This is called Read from the channel
 			val += 15
 			channel <- val // Put value back in channel
-		}
+		}()
 		val := <- channel
 		val *= 15
 		channel <- val
